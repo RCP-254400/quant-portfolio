@@ -1,5 +1,8 @@
 # Quant Portfolio — Rasheed Cunningham
 
+[![Open Futures Notebook in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RCP-254400/quant-portfolio/blob/main/notebooks/01_forwards_futures_pricing.ipynb)
+[![Open Binomial Notebook in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RCP-254400/quant-portfolio/blob/main/notebooks/02_binomial_options_pricing.ipynb)
+
 A quantitative finance portfolio showcasing derivatives pricing,
 hedging, and risk analytics built in Python.
 
@@ -17,17 +20,29 @@ hedging, and risk analytics built in Python.
 
 ## 📁 Current Projects
 
-### 1) Forwards & Futures Pricing
+### 1) Forwards & Futures Pricing (Cost-of-Carry)
+**Live Demo (Colab):** https://colab.research.google.com/github/RCP-254400/quant-portfolio/blob/main/notebooks/01_forwards_futures_pricing.ipynb  
+**Notebook:** `notebooks/01_forwards_futures_pricing.ipynb`  
 **Module:** `src/pricing/forwards.py`  
-**Notebook:** `notebooks/01_forwards_futures_pricing.ipynb`
 
-Implements:
+Includes:
 - Cost-of-carry forward pricing
-- Forward contract valuation
+- Mark-to-market forward valuation
 - Minimum-variance hedge ratio
 - Hedged vs unhedged P&L simulation
 
 ---
+
+### 2) Binomial Options Pricing (CRR Model)
+**Live Demo (Colab):** https://colab.research.google.com/github/RCP-254400/quant-portfolio/blob/main/notebooks/02_binomial_options_pricing.ipynb  
+**Notebook:** `notebooks/02_binomial_options_pricing.ipynb`  
+**Module:** `src/pricing/binomial.py`  
+
+Includes:
+- European call/put pricing (CRR)
+- American early exercise logic
+- Convergence vs number of steps
+- Delta & Gamma (finite-difference approximation)
 
 ## 🧰 Tools & Technologies
 
